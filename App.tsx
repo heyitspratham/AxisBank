@@ -16,7 +16,9 @@ const App = ()=>{
       <TopNav/>
       <Text style={styles.greetings} >Hi, Pratham Shukla</Text>
       <CardBox/>
-      <MyAxis/>
+      <MyAxis data={'My Axis'}  />
+      <MyAxis data={'Quick Links'}  />
+      <MyAxis data={'Bill Payments'}  />
     </SafeAreaView>
   )
 }
