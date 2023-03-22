@@ -4,7 +4,7 @@ import React from 'react'
 const FundTransfer = ():JSX.Element => {
   return (
     <View>
-      <Text>FundTransfer</Text>
+      <Text>FundTransfers</Text>
     </View>
   )
 }
