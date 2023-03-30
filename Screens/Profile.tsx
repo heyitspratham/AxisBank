@@ -40,7 +40,7 @@ const Profile = () => {
     {
       uid: 7,
       iconName: 'account-cancel-outline',
-      title: 'Update KYCC',
+      title: 'Update KYC',
     },
   ];  
 
