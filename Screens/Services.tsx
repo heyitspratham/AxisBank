@@ -19,7 +19,7 @@ const Services = ():JSX.Element => {
     {
       uid: 2,
       iconName: 'reply-circle',
-      text: 'Pay My Dues',
+      text: 'Pay My Dues now',
     },
     {
       uid: 3,
