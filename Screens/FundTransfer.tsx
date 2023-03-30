@@ -61,7 +61,7 @@ const FundTransfer = (): JSX.Element => {
 
   return (
     <SafeAreaView>
-      <SameTop heading={"Fund Transfer"}/>
+      <SameTop heading={"Fund Transfer"} bell={true}/>
       <Box cardList={cardList}/>
       <List payeeList={payeeList}/>
     </SafeAreaView>

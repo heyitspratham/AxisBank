@@ -5,6 +5,7 @@ import React from 'react'
 import SameTop from '../components/SameTop'
 import Box from '../components/Box';
 import List from '../components/List';
+import Search from '../components/Search';
 
 
 const Services = ():JSX.Element => {
@@ -36,28 +37,29 @@ const Services = ():JSX.Element => {
     {
       uid: 1,
       name: 'Block Debit Card',
-      imageUrl: 'https://avatars.githubusercontent.com/u/11613311?v=4',
+      iconName: 'credit-card-off-outline',
     },
     {
       uid: 2,
       name: 'Block Credit Card',
-      imageUrl: 'https://avatars.githubusercontent.com/u/94738352?v=4',
+      iconName: 'credit-card-off-outline',
     },
     {
       uid: 3,
       name: 'request Chequebook',
-      imageUrl: 'https://avatars.githubusercontent.com/u/29747452?v=4',
+      iconName: 'credit-card-edit-outline',
     },
     {
       uid: 4,
       name: 'Update Mobile Number',
-      imageUrl: 'https://avatars.githubusercontent.com/u/25549847?v=4',
+      iconName: 'cellphone-text',
     },
   ];
 
   return (
     <SafeAreaView>
-      <SameTop heading={"Services"}/>
+      <SameTop heading={"Services"} myreq={true}/>
+      <Search/>
       <Box cardList={cardList}/>
       <List payeeList={payeeList}/>
 

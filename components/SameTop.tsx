@@ -1,13 +1,16 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, Touchable, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
-const SameTop = ({heading}):JSX.Element => {
+const SameTop = ({heading, bell, myreq}):JSX.Element => {
   return (
     <View style={styles.top}>
         <Text style={styles.greetings}>{heading}</Text>
-        <Icon name="bell" size={30} color="black" />
+        <TouchableOpacity>
+          {myreq&&<Text style={styles.req}>My Request</Text>}
+          {bell&&<Icon name="bell-outline" size={30} color="black" />}
+        </TouchableOpacity>
     </View>
   )
 }
@@ -23,6 +26,13 @@ const styles = StyleSheet.create({
       top: {
         flexDirection: 'row',
         justifyContent: 'space-between',
+        alignItems: 'center',
         margin: 10,
       },
+      req:{
+        fontSize: 18,
+     
+        color: '#B3255F',
+
+      }
 })
